@@ -71,6 +71,8 @@ public class Runner{
                     productItem.setQuantity(BigDecimal.ONE);
                     productItem.setPriority(0);
                     productItem.setPublic(false);
+                    Purchases purchases = new Purchases();
+                    productItem.setPurchases(purchases);
 
                     productList.getItems().getProductItem().add(productItem);
                 }
